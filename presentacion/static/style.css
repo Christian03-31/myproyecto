@@ -28,6 +28,15 @@ body {
     border: 2px solid #ccc;
 }
 
+.refmisa {
+    display: block;
+    margin: 20px auto;
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
 .centrar {
     margin-left: 30%;
     margin-right: 30%;

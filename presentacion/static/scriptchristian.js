@@ -125,8 +125,8 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const foto = document.getElementById("fotoPerfil");
 
-  const imagen1 = "Imagenes/Perfil.jpeg";
-  const imagen2 = "Imagenes/Perfil2.jpeg";
+  const imagen1 = "/static/imgchristian/Perfil.jpeg";
+  const imagen2 = "/static/imgchristian/Perfil2.jpeg";
 
   foto.addEventListener("click", function () {
     const actual = foto.getAttribute("src");

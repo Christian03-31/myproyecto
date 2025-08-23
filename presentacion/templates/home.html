@@ -3,6 +3,8 @@
     <link rel="stylesheet" href="static/style.css">
 
 </head>
+{% extends 'layouts/cruce.html' %}
+{% block content %}
 <body>
     <div class="centrar">
         <h1>ELIJA A SU PROFECIONAL</h1>
@@ -12,7 +14,7 @@
         <div class="left">
             <details>
                 <summary><h1>Christian Díaz Brito</h1></summary>
-                <img src="static/img/perfilv2.jpeg" alt="Foto de Christian" class="christian">
+                <a href="/christian" class="refmisa"><img src="static/img/perfilv2.jpeg" alt="Foto de Christian" class="christian"></a>
                 <p><strong>Ubicación:</strong> Macul, Santiago</p>
                 <p><strong>Profesión:</strong> Ingeniero Industrial</p>
                 <p><strong>Contacto:</strong> A traves de Linkedin</p>
@@ -22,12 +24,14 @@
         <div class="right">
             <details>
                 <summary><h1>Misael Ancán Espinosa</h1></summary>
-                <img src="static/img/misa.png" alt="Foto de Misael" class="christian">
+                <a href="/misael" class="refmisa"><img src="static/img/misa.png" alt="Foto de Misael" class="christian"></a>
                 <p><strong>Ubicación:</strong> La granja, Santiago</p>
                 <p><strong>Profesión:</strong> Tecnico universitario en manteniminto Aeronautico</p>
                 <p><strong>Contacto:</strong> Eso por imbox </p>
-            </details>
+            </details>  
         </div>
     </div>
 
 </body>
+
+{% endblock %}

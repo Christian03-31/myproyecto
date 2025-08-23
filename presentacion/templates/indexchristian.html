@@ -1,12 +1,14 @@
 <head>
     <title>CURRICULUM</title><!--Nombre de la pagina-->
-    <link rel="stylesheet" href="static/stylechristian.css">
-    <script defer src="scriptchristian.js"></script>
+    <link rel="stylesheet" href="/static/stylechristian.css">
+    <script defer src="/static/scriptchristian.js"></script>
 </head>
+{% extends 'layouts/cruce.html' %}
+{% block content %}
 <body>
     <div class="Linea-azul"><!--Linea que se encuentra en la parte izquierda de la pagina-->
         <!--Foto de Perfil para el curriculum-->
-        <img src="static/imgchristian/Perfil.jpeg" alt="Foto_de_perfil" class="Foto_de_perfil" id="fotoPerfil" style="cursor: pointer;">
+        <img src="/static/imgchristian/Perfil.jpeg" alt="Foto_de_perfil" class="Foto_de_perfil" id="fotoPerfil" style="cursor: pointer;">
         <h2>Datos Personales</h2>
         <ul class="lista"><!--lista no ordenada-->
             <li><strong>Fecha de nacimiento: 23-09-1996</strong></li>
@@ -79,10 +81,12 @@
     <div class="Linea-celeste"><!--Genera una lista en la parte derecha de la pagina-->
         <div class="Logo-Contenido"></div><!--comando para contrlar la disposicion de las imagenes-->
         <!--Imagenes sacadas de la carpeta correspondiente, se debe tener siempre la ubicacion-->
-            <img src="static/imgchristian/logo-inacap-sobr-nosotros.jpg" alt="logo-inacap-sobr-nosotros" class="Logo-Inacap">
-            <img src="static/imgchristian/64af742f3380ca2a902586f1_rockruck-soluciones-logisticas-chile.jpg" alt="Logo-rocktruck" class="Logo-RockTruck">
+            <img src="/static/imgchristian/logo-inacap-sobr-nosotros.jpg" alt="logo-inacap-sobr-nosotros" class="Logo-Inacap">
+            <img src="/static/imgchristian/64af742f3380ca2a902586f1_rockruck-soluciones-logisticas-chile.jpg" alt="Logo-rocktruck" class="Logo-RockTruck">
     </div>
 </body>
 <foot>
     
 </foot>
+
+{% endblock %}
