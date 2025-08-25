@@ -28,13 +28,12 @@ body {
     border: 2px solid #ccc;
 }
 
-.refmisa {
+.imalink {
     display: block;
     margin: 20px auto;
     width: 120px;
     height: auto;
     border-radius: 50%;
-    border: 2px solid #ccc;
 }
 
 .centrar {
@@ -43,4 +42,13 @@ body {
     align-content: center;
     text-align: center;
     background-color: whitesmoke;
+}
+
+.pres {
+    display: block;
+    margin: 20px auto;
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #ccc;
 }
