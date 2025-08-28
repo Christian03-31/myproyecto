@@ -127,7 +127,8 @@
 <section class="contact-section">
     <div class="contact-container">
     <h2>Contáctame</h2>
-    <form id="contact-form" novalidate>   
+    <form id="contact-form" method="post">
+        {% csrf_token %}
     <div id="errores"></div>
 
     <!-- Nombre -->

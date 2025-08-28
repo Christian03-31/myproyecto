@@ -1,7 +1,7 @@
 <head>
     <title>CURRICULUM</title><!--Nombre de la pagina-->
     <link rel="stylesheet" href="/static/stylechristian.css">
-    <script defer src="/static/scriptchristian.js"></script>
+    <!---<script defer src="/static/scriptchristian.js"></script>--->
 </head>
 {% extends 'layouts/cruce.html' %}
 {% block content %}
@@ -70,7 +70,8 @@
         <div id="listaHabilidades"></div>
 
         <h2>Ingrese su correo para contacto</h2><!--Este es un cuadro para ingresar un correo de contacto si el curriculum cumple los requisitos-->
-        <form id="formulario">
+        <form id="formulario" method="post">
+            {% csrf_token %}
             <label for="mensaje">Escriba su correo electronico:</label><br>
             <input type="email" id="mensaje" name="mensaje">
             <div id="iconos" style="font-size: 2rem; margin-top: 10px;"></div>
