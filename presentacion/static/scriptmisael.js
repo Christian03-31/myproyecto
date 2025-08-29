@@ -17,9 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
  const gdato = [];
 
  /*Recibe la info del formulario */
- function datoGuardar(nombre,apellido,correo, listaTelefonos){
-    gdato.push({nombre,apellido,correo, listaTelefonos});
+ function datoGuardar(listaTelefonos){
+    gdato.push(listaTelefonos);
     console.log(gdato);
+    console.log("HOLAAAAAAAA");
   };
   
   /* validacion de correo*/
@@ -56,13 +57,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* Muestra errores si hay*/
     if (errores.length > 0) {
-      e.preventDefault();
       mostrarErrores(errores);
     } else {
       alert('✅ Formulario válido. Enviando datos…');
-      e.preventDefault();
     }
-    datoGuardar(nombre, apellido, correo, listaTelefonos)
+    datoGuardar(listaTelefonos)
   });
 
   /* Mostrar mensajes*/

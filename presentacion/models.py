@@ -4,7 +4,7 @@ class christiancontacto(models.Model):
     email = models.EmailField()
     
     def __str__(self):
-        return ('contacto'+self.email)
+        return ('contacto '+self.email)
 
 # Create your models here.
 
@@ -17,5 +17,5 @@ class misaelContacto(models.Model):
     telefono=models.TextField()
     
     def __str__(self):
-        return ('contacto', self.nombre, self.apellido, self.email)
+        return ('contacto ' + self.nombre +' '+ self.apellido + ' ' + self.email)
     

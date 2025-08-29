@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const iconos = document.getElementById("iconos");
 
   formulario.addEventListener("submit", function (event) {
-    event.preventDefault();
 
     const mensaje = campoMensaje.value.trim();
     const resultado = validarCorreo(mensaje);
