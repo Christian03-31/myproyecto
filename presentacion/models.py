@@ -2,6 +2,7 @@ from django.db import models
 
 class christiancontacto(models.Model):
     email = models.EmailField()
+    habilidades = models.TextField(default='No especificado')
     
     def __str__(self):
         return ('contacto '+self.email)

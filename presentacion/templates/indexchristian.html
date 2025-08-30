@@ -1,7 +1,7 @@
 <head>
     <title>CURRICULUM</title><!--Nombre de la pagina-->
     <link rel="stylesheet" href="/static/stylechristian.css">
-    <!--<script defer src="/static/scriptchristian.js"></script>-->
+    <script defer src="/static/scriptchristian.js"></script>
 </head>
 {% extends 'layouts/cruce.html' %}
 {% block content %}
@@ -11,20 +11,24 @@
         <a href="/" class="lista">Centro</a>
         <a href="/misael/" class="lista">Misael</a>
         <img src="/static/imgchristian/Perfil.jpeg" alt="Foto_de_perfil" class="Foto_de_perfil" id="fotoPerfil" style="cursor: pointer;">
-        <h2>Datos Personales</h2>
-        <ul class="lista"><!--lista no ordenada-->
-            <li><strong>Fecha de nacimiento: 23-09-1996</strong></li>
-            <li><strong>Nacionalidad: Chilena</strong></li>
-            <li><strong>Estado civil: Soltero</strong></li>
-        </ul>
+        <details>
+            <summary><h2>Datos Personales</h2></summary>
+            <ul class="lista"><!--lista no ordenada-->
+                <li><strong>Fecha de nacimiento: 23-09-1996</strong></li>
+                <li><strong>Nacionalidad: Chilena</strong></li>
+                <li><strong>Estado civil: Soltero</strong></li>
+            </ul>
+        </details>
         <div class="divisor"></div><!--Linea para separar-->
-        <h2>Aptitudes</h2>
-        <ol class="lista"><!--lista ordenada-->
-            <li><strong>Adaptacion</strong></li>
-            <li><strong>Resolución de problemas</strong></li>
-            <li><strong>Trabajo en equipo</strong></li>
-            <li><strong>Responsabilidad</strong></li>
-        </ol>
+        <details>
+            <summary><h2>Aptitudes</h2></summary>
+            <ol class="lista"><!--lista ordenada-->
+                <li><strong>Adaptacion</strong></li>
+                <li><strong>Resolución de problemas</strong></li>
+                <li><strong>Trabajo en equipo</strong></li>
+                <li><strong>Responsabilidad</strong></li>
+            </ol>
+        </details>        
     </div>
     <h1 id="boton-color" style="cursor: pointer;">CHRISTIAN DÍAZ</h1><!--Se modifico para volverlo un boton para cambiar los colores-->
     <div class="Contenido"><!--comando para determinar como estara el contenido-->
@@ -74,7 +78,10 @@
             {% csrf_token %}
             <label for="mensaje">Escriba su correo electronico:</label><br>
             <input type="email" id="mensaje" name="mensaje">
+            <input type="hidden" id="habilidadesOcultas" name="habilidades">
             <button type="submit">Enviar</button>
+
+            
         </form>
 
         <p id="respuesta"></p>

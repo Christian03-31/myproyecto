@@ -11,13 +11,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const mensaje = campoMensaje.value.trim();
     const resultado = validarCorreo(mensaje);
-
+    const listahabilidades = Array.from(habilidades).map(hab => `${hab.nombre.trim()}: ${hab.nivel.trim()}`);
+    document.getElementById("habilidadesOcultas").value = listahabilidades.join(", ");
+    
     mostrarResultado(resultado, mensaje);
     if (resultado === "valido") {
       campoMensaje.value = "";
     }
+    console.log(listahabilidades);
+    console.log(mensaje);
   });
-
 
   function validarCorreo(correo) { //Este scrip sirve para validar el formato de correo electronico
     if (correo === "") return "vacio";
@@ -64,10 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
         console.warn("No se encontró el botón con id 'boton-color'");
     }
 });
-
+const habilidades = [];
 //Este scrip es para agregar campos a la pagina
 document.addEventListener("DOMContentLoaded", function () {
-    const habilidades = [];
+    //const habilidades = [];
     const formHabilidad = document.getElementById("formHabilidad");
     const listaHabilidades = document.getElementById("listaHabilidades");
 
