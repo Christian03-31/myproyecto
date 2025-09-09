@@ -1,5 +1,7 @@
 Actividad 1, Misael Ancan - Christian Díaz
 
+LINK de GITHUB: :https://github.com/Christian03-31/myproyecto
+
 En esta actividad creamos una pagina para seleccionar profesionales, los pasos que seguimos para el desarrollo fueron:
 
 1. Inicialización del Proyecto
