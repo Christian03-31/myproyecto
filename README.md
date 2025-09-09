@@ -19,6 +19,7 @@ Página central: muestra imágenes de los dos integrantes. Al hacer clic en cada
 Currículum 1: contiene un formulario para ingresar habilidades, nivel de dominio y correo electrónico.
 
 Currículum 2: permite ingresar nombre, apellido, correo y uno o más números de teléfono.
+
 Se añadieron botones de navegación en cada página para moverse entre ellas fácilmente.
 
 4. Estilos Visuales
