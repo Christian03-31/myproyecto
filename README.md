@@ -23,7 +23,9 @@ Se añadieron botones de navegación en cada página para moverse entre ellas f�
 Se creó un archivos styles.css para aplicar estilos personalizados a las páginas HTML, mejorando la presentación visual de las paginas web. 
 5. Modelado de Datos
 Se definieron modelos en models.py para almacenar la información ingresada en los formularios:
+
 Modelo para Página 1: habilidades, nivel y correo.
+
 Modelo para Página 2: nombre, apellido, correo y números de teléfono (permitiendo múltiples entradas).
 
 6. Migraciones y Base de Datos
