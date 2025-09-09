@@ -42,8 +42,8 @@ Esto permite consultar, administrar o extender la información posteriormente.
 
 8. Los usuarios de Administrador de la base de datos en sqlite3
 son:
-    nombre de usuario: Christian
+    nombre de usuario: christian
     contraseña: 1234
 
-    nombre de usuario: Misael
+    nombre de usuario: misael
     contraseña: 12345
